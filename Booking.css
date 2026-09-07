@@ -1,0 +1,86 @@
+/* BOOKING */
+
+.booking {
+
+    padding: 60px 15%;
+
+    background-color: #f5b400;
+
+}
+
+
+.booking h1 {
+
+    margin-bottom: 10px;
+
+}
+
+
+form {
+
+    background-color: white;
+
+    padding: 30px;
+
+    margin-top: 25px;
+
+}
+
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #aaa;
+
+    box-sizing: border-box;
+
+}
+
+
+textarea {
+
+    height: 100px;
+
+}
+
+
+button {
+
+    margin-top: 20px;
+
+    padding: 12px 30px;
+
+    background-color: #111;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background-color: #333;
+
+}
