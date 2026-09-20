@@ -1,86 +1,154 @@
-/* BOOKING */
+/* ==================================================
+   BOOKING
+================================================== */
 
 .booking {
+    padding: 90px 15%;
 
-    padding: 60px 15%;
-
-    background-color: #f5b400;
-
+    background:
+        linear-gradient(
+            135deg,
+            #f5b400,
+            #ffd95a
+        );
 }
 
+.booking form {
+    background: white;
 
-.booking h1 {
+    padding: 40px;
 
-    margin-bottom: 10px;
+    border-radius: 10px;
 
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.15);
 }
 
+.form-row {
+    display: grid;
 
-form {
+    grid-template-columns: 1fr 1fr;
 
-    background-color: white;
-
-    padding: 30px;
-
-    margin-top: 25px;
-
+    gap: 20px;
 }
 
+.form-group {
+    margin-bottom: 18px;
+}
 
-label {
-
+.form-group label {
     display: block;
-
-    margin-top: 15px;
-
-    margin-bottom: 5px;
 
     font-weight: bold;
 
-}
+    font-size: 14px;
 
+    margin-bottom: 7px;
+}
 
 input,
 select,
 textarea {
-
     width: 100%;
 
-    padding: 12px;
+    padding: 13px;
 
-    border: 1px solid #aaa;
+    border: 1px solid #ccc;
 
-    box-sizing: border-box;
+    border-radius: 5px;
 
+    font-family: Arial;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #d59600;
+
+    box-shadow:
+        0 0 0 2px rgba(245,180,0,0.15);
+}
 
 textarea {
+    height: 120px;
 
-    height: 100px;
-
+    resize: vertical;
 }
 
-
-button {
-
-    margin-top: 20px;
-
-    padding: 12px 30px;
-
-    background-color: #111;
+.booking button {
+    background: #111;
 
     color: white;
 
     border: none;
 
+    padding: 14px 28px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
     cursor: pointer;
 
+    transition: 0.3s;
 }
 
+.booking button:hover {
+    background: #333;
 
-button:hover {
+    transform: translateY(-2px);
+}
 
-    background-color: #333;
+/* ==================================================
+   FAQ
+================================================== */
 
+.faq {
+    padding: 90px 15%;
+    background: white;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+details {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    list-style: none;
+    position: relative;
+    padding-right: 30px;
+}
+
+summary::after {
+    content: "+";
+
+    position: absolute;
+    right: 0;
+
+    font-size: 22px;
+    color: #d59600;
+}
+
+details[open] summary::after {
+    content: "−";
+}
+
+details p {
+    color: #666;
+    margin-top: 12px;
+    font-size: 14px;
 }

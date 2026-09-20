@@ -1,73 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- ================= BOOKING ================= -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Booking.css">
+    <link rel="stylesheet" href="booking.css"
+ </head>
+ <body>
+    <section class="booking" id="booking">
 
-</head>
-<body>
-<!-- BOOKING -->
+    <div class="section-heading">
 
-<div class="booking" id="booking">
+        <p class="section-label">
+            GET STARTED
+        </p>
 
-    <h1>Book Your College Event</h1>
+        <h2>
+            Book Your <span>Event</span>
+        </h2>
 
-    <p>
-        Fill the form below to tell us about your event.
-    </p>
+        <p>
+            Fill out the form and tell us about
+            your dream college event.
+        </p>
+
+    </div>
+
 
     <form>
 
-        <label>Name</label>
+        <div class="form-row">
 
-        <input
-        type="text"
-        placeholder="Enter your name">
+            <div class="form-group">
 
-        <label>Phone Number</label>
+                <label>Name</label>
 
-        <input
-        type="text"
-        placeholder="Enter your phone number">
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                    required>
 
-        <label>Email</label>
+            </div>
 
-        <input
-        type="email"
-        placeholder="Enter your email">
 
-        <label>Select Event</label>
+            <div class="form-group">
 
-        <select>
+                <label>Phone Number</label>
 
-            <option>College Fest</option>
-            <option>Live Concert</option>
-            <option>Cultural Event</option>
-            <option>Birthday Celebration</option>
-            <option>Fashion Show</option>
-            <option>Campus Decoration</option>
+                <input
+                    type="tel"
+                    placeholder="Enter your phone number"
+                    required>
 
-        </select>
+            </div>
 
-        <label>Event Date</label>
+        </div>
 
-        <input type="date">
 
-        <label>Message</label>
+        <div class="form-row">
 
-        <textarea
-        placeholder="Tell us about your event"></textarea>
+            <div class="form-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Select Event</label>
+
+                <select>
+
+                    <option>Choose an event</option>
+                    <option>College Fest</option>
+                    <option>Live Concert</option>
+                    <option>Cultural Event</option>
+                    <option>Birthday Celebration</option>
+                    <option>Fashion Show</option>
+                    <option>Campus Decoration</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>Event Date</label>
+
+                <input type="date">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Number of Guests</label>
+
+                <input
+                    type="number"
+                    placeholder="Example: 500">
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Event Details</label>
+
+            <textarea
+                placeholder="Tell us about your event..."></textarea>
+
+        </div>
+
 
         <button type="submit">
-            Submit Booking
+            Submit Booking →
         </button>
 
     </form>
 
-</div>
+</section>
+<!-- ================= FAQ ================= -->
 
+<section class="faq">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            FAQ
+        </p>
+
+        <h2>
+            Frequently Asked <span>Questions</span>
+        </h2>
+
+    </div>
+
+
+    <div class="faq-container">
+
+        <details>
+
+            <summary>
+                What type of events does EventAura organize?
+            </summary>
+
+            <p>
+                EventAura organizes college fests, concerts,
+                cultural events, fashion shows, celebrations
+                and campus decoration.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Can students book an event?
+            </summary>
+
+            <p>
+                Yes. Students can use the booking form to
+                submit their event requirements.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Where does EventAura provide its services?
+            </summary>
+
+            <p>
+                EventAura is designed primarily for college
+                campuses and university events.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                How can I contact EventAura?
+            </summary>
+
+            <p>
+                You can contact us through phone, email or
+                the contact information provided below.
+            </p>
+
+        </details>
+
+    </div>
+
+</section>
     
-</body>
-</html>
+ </body>
+ </html>
